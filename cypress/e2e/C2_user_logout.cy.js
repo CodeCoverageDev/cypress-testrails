@@ -1,17 +1,17 @@
 describe('C2 User can logout', () => {
-    it('user login', () => {
+    it('C2 user login', () => {
         cy.wait(1000);
     });
 
-    it('click the profile icon', () => {
+    it('C2 click the profile icon', () => {
         cy.wait(1000);
     });
 
-    it('click logout', () => {
+    it('C2 click logout', () => {
         cy.wait(1000);
     });
 
-    it('should be redirected to the login screen', () => {
+    it('C2 should be redirected to the login screen', () => {
         cy.wait(1000);
     });
 });
