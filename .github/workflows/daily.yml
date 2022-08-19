@@ -27,7 +27,7 @@ jobs:
       - name: Install
         uses: cypress-io/github-action@v4
         with:
-          runTests: true
+          runTests: false
 
       # you can pass GitHub information in the name and description
       # to include in the TestRail run information
@@ -51,7 +51,7 @@ jobs:
       # Now run the Cypress tests, and the cypress-testrail-simple
       # plugin will automatically add the results to TestRail
       - name: Cypress tests
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v4
         with:
           install-command: echo "Already installed"
         env:
