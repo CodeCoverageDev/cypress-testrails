@@ -7,7 +7,7 @@ on: [pull_request]
   #   - cron: '0 4 * * *'
 
 jobs:
-  e2e ui tests:
+  cypress_testrail:
     runs-on: ubuntu-20.04
     env:
       # pass TestRail settings from the project secrets
