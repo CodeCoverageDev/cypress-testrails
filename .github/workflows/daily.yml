@@ -20,12 +20,12 @@ jobs:
 
     steps:
       - name: Checkout 🛎
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       # Install NPM dependencies, cache them correctly
       # do not run tests though - we need to add the TestRail run first
       - name: Install 📦
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v4
         with:
           runTests: false
 
