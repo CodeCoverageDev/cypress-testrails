@@ -3,5 +3,6 @@ versions:
   description:
     - project creation
     - add cypress and cypress-testrail-simple
+    - add github workflow
   changed-by:
     - Christopher Lim <toffer.lim87@gmail.com>
