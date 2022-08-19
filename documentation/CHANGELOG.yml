@@ -1,0 +1,7 @@
+versions:
+  version: 1.0.0
+  description:
+    - project creation
+    - add cypress and cypress-testrail-simple
+  changed-by:
+    - Christopher Lim <toffer.lim87@gmail.com>
