@@ -19,20 +19,20 @@ jobs:
       TESTRAIL_PROJECTID: 1
 
     steps:
-      - name: Checkout 🛎
+      - name: Checkout
         uses: actions/checkout@v2
 
       # Install NPM dependencies, cache them correctly
       # do not run tests though - we need to add the TestRail run first
-      - name: Install 📦
+      - name: Install
         uses: cypress-io/github-action@v4
         with:
-          runTests: false
+          runTests: true
 
       # you can pass GitHub information in the name and description
       # to include in the TestRail run information
       # https://docs.github.com/en/actions/learn-github-actions/contexts
-      - name: Start TestRail Run 🏃🏻‍♂️
+      - name: Start TestRail Run
         id: testRail
         run: |
           commitSubject="${{ github.event.commits[0].message }}"
@@ -50,7 +50,7 @@ jobs:
 
       # Now run the Cypress tests, and the cypress-testrail-simple
       # plugin will automatically add the results to TestRail
-      - name: Cypress tests 🧪
+      - name: Cypress tests
         uses: cypress-io/github-action@v2
         with:
           install-command: echo "Already installed"
@@ -58,7 +58,7 @@ jobs:
           # pass the run ID from the previous step via an env variable
           TESTRAIL_RUN_ID: ${{ steps.testRail.outputs.runId }}
 
-      - name: Close TestRail Run 🏁
+      - name: Close TestRail Run
         # always close the test run, even if the previous steps have failed
         if: ${{ always() }}
         run: |
