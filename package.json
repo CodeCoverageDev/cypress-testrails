@@ -1,0 +1,29 @@
+{
+  "name": "cypress-testrails",
+  "version": "1.0.0",
+  "description": "This is integrating test rails in cypress.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeCoverageDev/cypress-testrails.git"
+  },
+  "keywords": [
+    "cypress",
+    "test",
+    "rails",
+    "poc"
+  ],
+  "author": "Christopher Lim <toffer.lim87@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodeCoverageDev/cypress-testrails/issues"
+  },
+  "homepage": "https://github.com/CodeCoverageDev/cypress-testrails#readme",
+  "devDependencies": {
+    "cypress": "^10.6.0",
+    "cypress-testrail-simple": "^3.1.0"
+  }
+}
