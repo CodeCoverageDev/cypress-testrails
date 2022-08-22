@@ -1,10 +1,10 @@
 name: Daily e2e Testing
-on:
-  push:
-    branches:
-      - main
-  schedule:
-    - cron: '0 4 * * *'
+on: [push, pull_request]
+  # push:
+  #   branches:
+  #     - main
+  # schedule:
+  #   - cron: '0 4 * * *'
 
 jobs:
   cypress_testrail:
