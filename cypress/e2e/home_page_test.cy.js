@@ -1,5 +1,5 @@
 describe('Home Page test', () => {
-    it('C12 User navigates to www.example.com/home', () => {
+    it('Everyone can view the home page', () => {
         cy.wait(1000);
     });
 });
